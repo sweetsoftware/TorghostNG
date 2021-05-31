@@ -45,7 +45,7 @@ ControlPort 9051
 RunAsDaemon 1
 ExitNodes {%s}"""
 
-iptables_rules = """NON_TOR="192.168.1.0/24 192.168.0.0/24"
+iptables_rules = """NON_TOR="10.0.0.0/8 172.16.0.0/12 192.168.0.0/16"
 TOR_UID={}
 TRANS_PORT="9040"
 
